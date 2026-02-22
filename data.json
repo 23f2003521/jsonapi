@@ -28,26 +28,12 @@
     {"id": "prod-42c50b5b-022", "name": "Standard Item 22", "category": "books", "price": 253.43, "stock": 80, "rating": 4.9},
     {"id": "prod-42c50b5b-023", "name": "Elite Item 23", "category": "books", "price": 484.36, "stock": 85, "rating": 3.8}
   ],
-  "aggregations": {
-    "clothing": {
-      "count": 2,
-      "inventoryValue": 20170.99
-    },
-    "electronics": {
-      "count": 3,
-      "inventoryValue": 105315.81
-    },
-    "sports": {
-      "count": 4,
-      "inventoryValue": 110248.32
-    },
-    "home": {
-      "count": 7,
-      "inventoryValue": 164595.25
-    },
-    "books": {
-      "count": 8,
-      "inventoryValue": 184712.35
-    }
+ "aggregations": {
+  "clothing": {"count": 2, "inventoryValue": 28789.19},
+  "electronics": {"count": 3, "inventoryValue": 105315.81},
+  "sports": {"count": 4, "inventoryValue": 144527.71},
+  "home": {"count": 7, "inventoryValue": 290995.79},
+  "books": {"count": 7, "inventoryValue": 141352.56}
+}
   }
 }
