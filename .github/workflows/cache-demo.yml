@@ -1,0 +1,21 @@
+name: Cache Demo
+
+on: [push]
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Prime cache-80f5a79
+      id: cache-step
+      uses: actions/cache@v4
+      with:
+        key: cache-80f5a79
+        path: ~/.cache  # Caches a dummy dir (like pip/node_modules); doesn't matter what
+    
+    - name: Echo cache result
+      run: echo "Cache result: ${{ steps.cache-step.outputs.cache-hit }}"
